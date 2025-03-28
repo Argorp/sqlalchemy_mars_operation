@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-utilities.rtl.min.css') }}">
+</head>
+<body>
+    <h1 class="bg-light">Миссия Колонизация Марса</h1>
+    <h4>И на Марсе будут яблони цвести!</h4>
+    {% block content %} {% endblock %}
+</body>
+</html>
